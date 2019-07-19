@@ -176,6 +176,11 @@ p {
   font-size: 1.8rem;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 480px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -227,6 +232,32 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  background-color: black;
+  margin: 10px 0px;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  font-size: 1.9rem;
+  border-radius: 6px;
+}
+.home .walk .walk-text .btn:hover {
+  display: block;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  background-color: white;
+  margin: 10px 0px;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  font-size: 1.9rem;
+  border-radius: 6px;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -1,1 +1,25 @@
 // Mixins Here
+.flexColumnCenter(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+};
+
+.flexRowSpaceAround(){
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-button(@Bcolor, @color) {
+    display: block;
+    color: @color;
+    padding: 8px;
+    text-align: center;
+    background-color: @Bcolor;
+    margin:  10px 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+}

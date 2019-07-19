@@ -1,8 +1,23 @@
 // Mixins Here
 
+//animations
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
 .text-shadow (@string: 0 1px 3px rgba(104, 99, 99, 0.836)) {
 	text-shadow: @string;
 }
+//
+
 .flexColumnCenter(){
     display: flex;
     flex-direction: column;
@@ -36,7 +51,7 @@
     background-color: @Bcolor;
     margin:  10px 20px 0 0;
     cursor: pointer;
-    width: 480px;
+    width: 460px;
     height: 50px;
     font-size: 1.9rem;
     border-radius: 0px;
